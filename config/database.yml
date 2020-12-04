@@ -5,7 +5,7 @@ development:
   pool: 5
   host: localhost
   username: postgres
-  password: 16dynnah94
+  password: umasenha
 
 test:
   adapter: postgresql
@@ -14,4 +14,4 @@ test:
   pool: 5
   host: localhost
   username: postgres
-  password: 16dynnah94
+  password: umasenha

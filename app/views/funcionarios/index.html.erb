@@ -12,13 +12,12 @@
 </div>
 
 <div class="welcome"> 
-<h1>Welcome <%= current_funcionario.nome %>!</h1>
 <%= link_to "Log out", destroy_funcionario_session_path, :method => :delete, class:"btn btn-primary btn-lg" %>
 </div>
 
     <p id="notice"><%= notice %></p>
 
-  <h1 class="title">Funcionarios</h1>
+  <h1 class="title">Funcionario <%= current_funcionario.nome %></h1>
 
  <div class="table-func">
     <table class="table">
@@ -34,19 +33,17 @@
           </tr>
         </thead>
         <tbody>
-          <% @funcionarios.each do |funcionario| %>
       <tr>
-        <td><%= funcionario.cpf %></td>
-        <td><%= funcionario.nome %></td>
-        <td><%= funcionario.rg %></td>
-        <td><%= funcionario.sexo %></td>
-        <td><%= funcionario.telefone %></td>
-        <td><%= funcionario.data %></td>
-        <td><%= link_to 'Show', funcionario %></td>
-        <td><%= link_to 'Edit', edit_funcionario_path(funcionario) %></td>
-        <td><%= link_to 'Destroy', funcionario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= current_funcionario.cpf %></td>
+        <td><%= current_funcionario.nome %></td>
+        <td><%= current_funcionario.rg %></td>
+        <td><%= current_funcionario.sexo %></td>
+        <td><%= current_funcionario.telefone %></td>
+        <td><%= current_funcionario.data %></td>
+        <td><%= link_to 'Show', current_funcionario %></td>
+        <td><%= link_to 'Edit', edit_funcionario_path(current_funcionario) %></td>
+        <%# <td><%= link_to 'Destroy', funcionario, method: :delete, data: { confirm: 'Are you sure?' } </td>%>
       </tr>
-    <% end %>
         </tbody>
     </table>
 

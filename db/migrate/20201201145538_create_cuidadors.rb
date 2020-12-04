@@ -6,7 +6,7 @@ class CreateCuidadors < ActiveRecord::Migration[6.0]
       t.string :rg
       t.string :sexo
       t.string :telefone
-      t.date :data
+      t.date :datanasc
 
       t.timestamps
     end

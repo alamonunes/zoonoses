@@ -70,6 +70,6 @@ class CuidadorsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cuidador_params
-      params.require(:cuidador).permit(:cpf, :nome, :rg, :sexo, :telefone, :data, :email)
+      params.require(:cuidador).permit(:cpf, :nome, :rg, :sexo, :telefone, :datanasc, :email)
     end
 end

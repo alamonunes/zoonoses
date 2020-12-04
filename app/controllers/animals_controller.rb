@@ -5,25 +5,28 @@ class AnimalsController < ApplicationController
 
   # GET cuidadors/1/animals
   def index
-    @animals = @cuidador.animals
+    @animal = @cuidador.animal
   end
 
   # GET cuidadors/1/animals/1
   def show
+    @animal = @cuidador.animal
   end
 
   # GET cuidadors/1/animals/new
   def new
-    @animal = @cuidador.animals.build
+    @animal = @cuidador.animal.build
   end
 
   # GET cuidadors/1/animals/1/edit
   def edit
+    @animal = @cuidador.animal
+    @cuidador = Cuidador.find(params[:cuidador_id])
   end
 
   # POST cuidadors/1/animals
   def create
-    @animal = @cuidador.animals.build(animal_params)
+    @animal = @cuidador.animal.build(animal_params)
 
     if @animal.save
       redirect_to([@animal.cuidador, @animal], notice: 'Animal was successfully created.')
@@ -34,8 +37,10 @@ class AnimalsController < ApplicationController
 
   # PUT cuidadors/1/animals/1
   def update
+    @animal = @cuidador.animal
+    @cuidador = Cuidador.find(params[:cuidador_id])
     if @animal.update_attributes(animal_params)
-      redirect_to([@animal.cuidador, @animal], notice: 'Animal was successfully updated.')
+      redirect_to(cuidadors_path)
     else
       render action: 'edit'
     end
@@ -55,7 +60,8 @@ class AnimalsController < ApplicationController
     end
 
     def set_animal
-      @animal = @cuidador.animals.find(params[:id])
+      # @animal = @cuidador.animal.find(params[:id])
+      @animal = Animal.where(id: params[:d], cuidador: current_cuidador).take
     end
 
     # Only allow a trusted parameter "white list" through.

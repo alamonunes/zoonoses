@@ -18,7 +18,7 @@
 
     <p id="notice"><%= notice %></p>
 
-  <h1 class="title">Cuidadores</h1>
+<h1 class="title">Cuidador</h1>
 
  <div class="table-func">
     <table class="table">
@@ -34,19 +34,48 @@
           </tr>
         </thead>
         <tbody>
-          <% @cuidadors.each do |cuidador| %>
+          
       <tr>
-        <td><%= cuidador.cpf %></td>
-        <td><%= cuidador.nome %></td>
-        <td><%= cuidador.rg %></td>
-        <td><%= cuidador.sexo %></td>
-        <td><%= cuidador.telefone %></td>
-        <td><%= cuidador.data %></td>
-        <td><%= link_to 'Show', cuidador %></td>
-        <td><%= link_to 'Edit', edit_cuidador_path(cuidador) %></td>
-        <td><%= link_to 'Destroy', cuidador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= current_cuidador.cpf %></td>
+        <td><%= current_cuidador.nome %></td>
+        <td><%= current_cuidador.rg %></td>
+        <td><%= current_cuidador.sexo %></td>
+        <td><%= current_cuidador.telefone %></td>
+        <td><%= current_cuidador.datanasc %></td>
+        <td><%= link_to 'Show', current_cuidador %></td>
+        <td><%= link_to 'Edit', edit_cuidador_path(current_cuidador) %></td>
+        <%# <td><%= link_to 'Destroy', current_cuidador, method: :delete, data: { confirm: 'Are you sure?' } %></td> %>
       </tr>
-    <% end %>
+        </tbody>
+    </table>
+
+    <br>
+    <h1 class="title">Animal</h1>
+
+ <div class="table-func">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">NOME</th>
+            <th scope="col">RAÇA</th>
+            <th scope="col">SEXO</th>
+            <th scope="col">TIPO</th>
+            <th scope="col">IDADE</th>
+            <th scope="col">PESO</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+      <tr>
+        <td><%= current_cuidador.animal.nome %></td>
+        <td><%= current_cuidador.animal.raca %></td>
+        <td><%= current_cuidador.animal.sexo %></td>
+        <td><%= current_cuidador.animal.tipo %></td>
+        <td><%= current_cuidador.animal.idade %></td>
+        <td><%= current_cuidador.animal.peso %></td>
+        <td><%= link_to 'Edit', edit_cuidador_animal_path(current_cuidador, current_cuidador.animal) %></td>
+      </tr>
         </tbody>
     </table>
 

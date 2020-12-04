@@ -6,6 +6,10 @@
 </head>
 <body>
 
+<div class="imagem">
+<%= link_to 'Back', new_cuidador_session_path, class:"btn btn-primary" %>
+</div>
+
 <div class="imagem"> 
     <h3>Centro Zoonoses</h3>
     <%= image_tag("logo.png", :alt => "class") %>
@@ -36,6 +40,11 @@
   <div class="field">
     <%= f.label :sexo %><br />
     <%= f.text_field :sexo, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :datanasc %><br />
+    <%= f.date_field :datanasc, autofocus: true %>
   </div>
 
   <div class="field">

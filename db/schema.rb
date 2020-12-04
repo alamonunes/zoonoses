@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2020_12_01_162621) do
     t.string "rg"
     t.string "sexo"
     t.string "telefone"
-    t.date "data"
+    t.date "datanasc"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "email", default: "", null: false
