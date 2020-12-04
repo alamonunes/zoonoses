@@ -1,0 +1,19 @@
+<% if current_cuidador%>
+ <h1>Welcome <%= current_cuidador.nome %>!</h1>
+ <%= link_to "Log out", destroy_cuidador_session_path, :method => :delete %>
+
+<% elsif current_funcionario %>
+ <h1>Welcome <%= current_funcionario.nome %>!</h1>
+ <%= link_to "Log out", destroy_funcionario_session_path, :method => :delete %>
+
+<% else %>
+<div class="homepage">
+ <h1>Centro Zoonoses</h1>
+ <%= image_tag("logo.png", :alt => "rss feed") %>
+</div> 
+ <h2>Please login or sign up</h2>
+ <%= link_to "sign up cuidador", new_cuidador_registration_path %>
+ <%= link_to "sign up funcionario", new_funcionario_registration_path %>
+ <%= link_to "login cuidador", new_cuidador_session_path %>
+ <%= link_to "login funcionario", new_funcionario_session_path %>
+<% end %>
