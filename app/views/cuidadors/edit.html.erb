@@ -1,6 +1,36 @@
-<h1>Editing Cuidador</h1>
+<!<!DOCTYPE html>
+<html>
+<head>
+<title>Centro Zoonoses</title>
+<%= stylesheet_link_tag "cuidadors.css" %>
+</head>
+<body>
 
+<div class="imagem"> 
+    <h3>Centro Zoonoses</h3>
+    <%= image_tag("logo.png", :alt => "class") %>
+</div>
+
+
+<h1 class="title-edit">Edite suas Informações</h1>
+
+
+<div class="edit-cuidador">
 <%= render 'form', cuidador: @cuidador %>
+</div>
 
+
+<hr class="view-hr" />
+
+<div class="actions-edit-cuidador">
 <%= link_to 'Show', @cuidador %> |
 <%= link_to 'Back', cuidadors_path %>
+</div>
+
+</body>
+</html>
+
+
+
+
+

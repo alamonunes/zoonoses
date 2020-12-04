@@ -3,13 +3,15 @@ development:
   encoding: unicode
   database: zoo
   pool: 5
+  host: localhost
   username: postgres
-  password: umasenha
+  password: 16dynnah94
 
 test:
   adapter: postgresql
   encoding: unicode
   database: zoo
   pool: 5
+  host: localhost
   username: postgres
-  password: umasenha
+  password: 16dynnah94

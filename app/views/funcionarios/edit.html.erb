@@ -1,6 +1,33 @@
-<h1>Editing Funcionario</h1>
+<!<!DOCTYPE html>
+<html>
+<head>
+<title>Centro Zoonoses</title>
+<%= stylesheet_link_tag "cuidadors.css" %>
+</head>
+<body>
 
+<div class="imagem"> 
+    <h3>Centro Zoonoses</h3>
+    <%= image_tag("logo.png", :alt => "class") %>
+</div>
+
+
+<h1 class="title-edit">Edite suas Informações</h1>
+
+
+<div class="edit-func">
 <%= render 'form', funcionario: @funcionario %>
+</div>
 
+
+<hr class="view-hr" />
+
+<div class="actions-edit-func">
 <%= link_to 'Show', @funcionario %> |
 <%= link_to 'Back', funcionarios_path %>
+</div>
+
+</body>
+</html>
+
+

@@ -1,4 +1,19 @@
-<h2>Sign up</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Centro Zoonoses</title>
+<%= stylesheet_link_tag "cuidadors.css" %>
+</head>
+<body>
+
+<div class="imagem"> 
+    <h3>Centro Zoonoses</h3>
+    <%= image_tag("logo.png", :alt => "class") %>
+</div>
+
+<div class="login"> 
+    <h3>Cadastro</h3>
+</div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "funcionarios/shared/error_messages", resource: resource %>
@@ -47,8 +62,13 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class:"input-signup" %>
   </div>
 <% end %>
 
+<div class="log-in"> 
 <%= render "funcionarios/shared/links" %>
+</div>
+
+</body>
+</html>
