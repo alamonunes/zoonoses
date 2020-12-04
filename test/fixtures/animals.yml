@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cuidador: one
+  nome: MyString
+  sexo: MyString
+  raca: MyString
+  tipo: MyString
+  idade: 1
+  peso: 1.5
+
+two:
+  cuidador: two
+  nome: MyString
+  sexo: MyString
+  raca: MyString
+  tipo: MyString
+  idade: 1
+  peso: 1.5

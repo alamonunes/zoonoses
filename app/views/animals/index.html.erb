@@ -1,0 +1,33 @@
+<h1>Listing animals</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Raca</th>
+    <th>Tipo</th>
+    <th>Idade</th>
+    <th>Peso</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @animals.each do |animal| %>
+  <tr>
+    <td><%= animal.nome %></td>
+    <td><%= animal.sexo %></td>
+    <td><%= animal.raca %></td>
+    <td><%= animal.tipo %></td>
+    <td><%= animal.idade %></td>
+    <td><%= animal.peso %></td>
+    <td><%= link_to 'Show', [animal.cuidador, animal] %></td>
+    <td><%= link_to 'Edit', edit_cuidador_animal_path(animal.cuidador, animal) %></td>
+    <td><%= link_to 'Destroy', [animal.cuidador, animal], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Animal', new_cuidador_animal_path(params[:cuidador_id]) %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @cuidador.cpf %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @cuidador.nome %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @cuidador.rg %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @cuidador.sexo %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @cuidador.telefone %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @cuidador.data %>
+</p>
+
+<%= link_to 'Edit', edit_cuidador_path(@cuidador) %> |
+<%= link_to 'Back', cuidadors_path %>
