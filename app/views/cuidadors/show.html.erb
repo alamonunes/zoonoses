@@ -1,4 +1,20 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+<title>Centro Zoonoses</title>
+<%= stylesheet_link_tag "cuidadors.css" %>
+</head>
+<body>
+
+<div class="imagem"> 
+    <h3>Centro Zoonoses</h3>
+    <%= image_tag("logo.png", :alt => "class") %>
+</div>
+
+
 <p id="notice"><%= notice %></p>
+
+<div class="infos-view">
 
 <p>
   <strong>Cpf:</strong>
@@ -29,6 +45,22 @@
   <strong>Data:</strong>
   <%= @cuidador.data %>
 </p>
+</div>
 
+<hr class="view-hr" />
+
+<div class="actions-cuidador">
 <%= link_to 'Edit', edit_cuidador_path(@cuidador) %> |
 <%= link_to 'Back', cuidadors_path %>
+</div>
+
+
+
+
+ </div>
+
+</body>
+</html>
+
+
+

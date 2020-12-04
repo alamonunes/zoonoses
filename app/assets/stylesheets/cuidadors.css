@@ -1,0 +1,186 @@
+body {
+    background-color: whitesmoke;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:#2d9cdb;
+}
+
+img {
+    max-width: 100px; 
+    max-height: 100px;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 10px;
+    color: #1c2237;
+}
+
+
+.field {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+a {
+    color: #2d9cdb;
+    text-align: center;
+}
+
+.input-login {
+    background-color: #2d9cdb;
+    color: whitesmoke;
+    padding: 5px 15px 5px 15px;
+}
+
+hr {
+    margin-top: 50px;
+    width: 80%;
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+.log-in {
+    color: #2d9cdb;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+.input-signup {
+    background-color: #2d9cdb;
+    color: whitesmoke;
+    padding: 5px 15px 5px 15px;
+}
+
+/* welcome page */
+
+.welcome {
+    margin-bottom: 70px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+	color:  #1c2237;
+	text-align: center;
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    float: right;
+    margin-right: 20px;
+    background-color: #2d9cdb;
+    border-color: #2d9cdb;
+    margin-right: 30px;
+    width: 100px;
+    height: 50px;
+}
+
+.btn:hover {
+    background-color: #f00946;
+    border-color: #f00946;
+}
+
+p#notice {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    margin-top: 10px;
+    text-align: center;
+    color: #f00946;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+	color:  #1f2436;
+	text-align: center;
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* view */
+
+.infos-view p {
+    font-size: 1.0em; 
+}
+
+.actions-cuidador {
+    color: #2d9cdb;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.actions-cuidador a {
+    color: #2d9cdb;
+}
+
+.view-hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+/* edit */
+
+.title-edit {
+    font-family: 'Roboto', sans-serif;
+	color:  #1f2436;
+	text-align: center;
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+
+
+.actions-edit-cuidador {
+    color: #2d9cdb;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.actions-edit-cuidador a {
+    color: #2d9cdb;
+    padding-bottom: 50px;
+
+}
